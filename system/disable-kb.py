@@ -20,8 +20,8 @@ def main():
     listener.start()
 
     try:
-        for i in reversed(range(SLEEP_TIME)):
-            print(f'Seconds remaining: {i+1}')
+        for i in range(SLEEP_TIME, 0, -1):
+            print(f'Seconds remaining: {i}')
             time.sleep(1)
 
     finally:
