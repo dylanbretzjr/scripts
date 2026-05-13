@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Temporarily disable the keyboard to allow for physical cleaning.
 
-This script uses pynput to suppress all keystrokes for a specified 
-duration. The remaining time is printed to the terminal.
+Uses pynput to suppress all keystrokes for a specified duration.
 
 Requirements:
 - pynput
