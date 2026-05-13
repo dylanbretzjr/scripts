@@ -18,11 +18,11 @@ def main():
         try:
             sleep_time = int(sys.argv[1])
             if sleep_time <= 0:
-                print("Error: Time must be greater than 0.")
+                print('Error: Time must be greater than 0.')
                 sys.exit(1)
         except ValueError:
-            print("Error: Please provide a valid whole number for seconds.")
-            print(f"Usage: {sys.argv[0]} [seconds]")
+            print('Error: Please provide a valid whole number for seconds.')
+            print(f'Usage: {sys.argv[0]} [seconds]')
             sys.exit(1)
 
     print(f'Keyboard disabled for {sleep_time} seconds...')
@@ -40,5 +40,5 @@ def main():
         listener.join()
         print('Keyboard enabled.')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
